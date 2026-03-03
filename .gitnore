@@ -1,0 +1,11 @@
+# 虚拟环境（必须忽略）
+venv/
+__pycache__/
+*.pyc
+.env
+
+# 数据库文件（必须忽略）
+trading.db
+
+# 上传的图片（必须忽略）
+static/uploads/*

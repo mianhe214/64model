@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>发布新商品</h2>
+<form method="POST" enctype="multipart/form-data">
+    {{ form.hidden_tag() }}
+    <div>
+        {{ form.name.label }}<br>
+        {{ form.name(size=32) }}
+    </div>
+    <div>
+        {{ form.price.label }}<br>
+        {{ form.price(size=32) }}
+    </div>
+    <div>
+        {{ form.description.label }}<br>
+        {{ form.description(rows=5, cols=32) }}
+    </div>
+    <div>
+        {{ form.image.label }}<br>
+        {{ form.image }}
+    </div>
+    <div>
+        {{ form.submit() }}
+    </div>
+</form>
+{% endblock %}
